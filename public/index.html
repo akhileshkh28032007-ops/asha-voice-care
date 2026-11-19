@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asha Voice Care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>🌸 Asha Voice Care</h2>
+    <p>Your multilingual healthcare companion</p>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h1>Namaste, ASHA Worker!</h1>
+      <p>How can I help you today?</p>
+    </section>
+
+    <section class="assistant">
+      <label for="language">Choose your language</label>
+      <select id="language">
+        <option value="en-IN">English</option>
+        <option value="hi-IN">Hindi</option>
+        <option value="kn-IN">Kannada</option>
+      </select>
+
+      <div class="mic-area">
+        <button id="micButton" aria-label="Start voice input">
+          🎙️
+        </button>
+        <p id="status">Tap the microphone to speak</p>
+      </div>
+
+      <div class="conversation">
+        <h3>Conversation</h3>
+        <div id="messages" aria-live="polite">
+          <p class="bot">Hello! I am Asha Voice Care. How can I assist you?</p>
+        </div>
+      </div>
+
+      <div class="text-input">
+        <input id="userInput" placeholder="Type your question..." />
+        <button id="sendButton">Send</button>
+      </div>
+    </section>
+
+    <p class="disclaimer">
+      For health education and support only. Not a substitute
+      for qualified medical care. Contact a healthcare professional
+      for medical concerns. For emergencies in India, call 112.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

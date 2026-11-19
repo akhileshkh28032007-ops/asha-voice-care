@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #263238;
+  min-height: 100vh;
+}
+
+header {
+  background: #087f8c;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 3px 12px #0002;
+}
+
+header h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+main {
+  max-width: 700px;
+  margin: 35px auto;
+  padding: 15px;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.welcome h1 {
+  color: #087f8c;
+  margin-bottom: 10px;
+}
+
+.assistant {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px #0002;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select, input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #b0bec5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.mic-area {
+  text-align: center;
+  padding: 25px;
+}
+
+#micButton {
+  width: 85px;
+  height: 85px;
+  border: none;
+  border-radius: 50%;
+  background: #087f8c;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #087f8c55;
+}
+
+#micButton:hover {
+  background: #05636e;
+}
+
+#status {
+  margin-top: 15px;
+  color: #607d8b;
+}
+
+.conversation {
+  background: #f5fafa;
+  padding: 18px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.conversation h3 {
+  margin-bottom: 15px;
+  color: #087f8c;
+}
+
+.bot, .user {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.bot {
+  background: #e0f2f1;
+}
+
+.user {
+  background: #fce4ec;
+  text-align: right;
+}
+
+.text-input {
+  display: flex;
+  gap: 10px;
+}
+
+.text-input input {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+#sendButton {
+  padding: 12px 20px;
+  background: #087f8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #546e7a;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+  main {
+    margin: 15px auto;
+  }
+
+  .assistant {
+    padding: 18px;
+  }
+}
