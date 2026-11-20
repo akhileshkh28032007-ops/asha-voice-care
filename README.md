@@ -40,6 +40,7 @@ Asha Voice Care provides a simple interface where users can:
 
 ## 🏗️ Project Architecture
 
+```mermaid
 flowchart TD
     A[ASHA Worker] --> B[Web Application]
     B --> C{Input Method}
