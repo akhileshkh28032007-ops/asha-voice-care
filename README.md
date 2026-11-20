@@ -38,33 +38,22 @@ Asha Voice Care provides a simple interface where users can:
 - Express.js
 - Browser Speech Recognition and Speech Synthesis APIs
 
-🏗️ Project Architecture
+## 🏗️ Project Architecture
 
-       ASHA Worker
-            |
-            v
-     Web Application
-            |
-       +----+----+
-       |         |
-   Microphone  Text Input
-       |         |
-       v         v
-  Speech Input  User Query
-       |         |
-       +----+----+
-            |
-            v
-     JavaScript Logic
-            |
-            v
-     Demo Assistant Reply
-            |
-            v
-    Speech Synthesis
-            |
-            v
-       User Response
+flowchart TD
+    A[ASHA Worker] --> B[Web Application]
+    B --> C{Input Method}
+    C --> D[Microphone]
+    C --> E[Text Input]
+    D --> F[Speech Recognition]
+    F --> G[JavaScript Logic]
+    E --> G
+    G --> H[Demo Assistant Reply]
+    H --> I[Display Response]
+    H --> J[Speech Synthesis]
+    J --> K[Voice Response]
+    B --> L[Node.js and Express Server]
+
 
 🚀 How to Run the Project
 
